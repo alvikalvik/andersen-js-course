@@ -11,3 +11,6 @@
  *
  * forEachRight([1, 2, 3, 4], val => console.log(val)); -> в консоль 4 3 2 1
  */
+
+const forEachRight = (arr, cb) => [...arr].reverse().forEach(cb);
+forEachRight([1, 2, 3, 4], val => console.log(val));
